@@ -17,7 +17,7 @@ class testJUNITTest {
 
     @Test
     void getAge(){
-        
+
     }
 
     @AfterEach
