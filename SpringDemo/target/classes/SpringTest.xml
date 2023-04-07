@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <!--
+        To invoke init and destroy methods, use the tags init-method and destroy-method.
+        The strings in the tag do not have to be init or destroy, they can be a different name
+        as long as the name is the same as target method in the class
+    -->
+<!--    <bean id="vehicle" class="org.genspark.Car" init-method="init" destroy-method="theEnd">-->
+<!--        &lt;!&ndash;This is an example of a setter injection. &ndash;&gt;-->
+<!--        &lt;!&ndash; Use property to map an object to the injected class and reference another bean for setter injection &ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="ty" ref="Tyre"/>&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash; This is an example of a constructor injection &ndash;&gt;-->
+<!--        &lt;!&ndash; Uses the constructor-arg tag &ndash;&gt;-->
+<!--        &lt;!&ndash; In this case car has a global variable called Tyre ty, and it is the first variable on the index,-->
+<!--        so it the first arg element 0. You then map that variable to a bean reference which is Tyre which then injects-->
+<!--        the values required in the Tyre object&ndash;&gt;-->
+<!--        <constructor-arg index="0" ref="Tyre"/>-->
+<!--        </bean>-->
+
+
+
+<!--&lt;!&ndash;             This is an example of a setter injection&ndash;&gt;-->
+<!--        <bean id="Tyre" class="org.genspark.Tyre">-->
+<!--            &lt;!&ndash;-->
+<!--                To add values for attributes, you use property tag and define the name of the variable-->
+<!--                and the value to that name as the injection-->
+<!--              &ndash;&gt;-->
+<!--            &lt;!&ndash;-->
+<!--                This bean is an example of a Setter Injection which is a type of dependency injection-->
+<!--                does injections through the setters in the class, so make sure to add setters to your-->
+<!--                class so that the injection could function properly-->
+<!--             &ndash;&gt;-->
+<!--                <property name="brand" value="BIDGESTONE"/>-->
+<!--                <property name="size" value="17"/>-->
+
+<!--            &lt;!&ndash;This is an example of using a constructor injection. You to implement constructor in the class-->
+<!--                for the injection to work-->
+<!--             &ndash;&gt;-->
+<!--&lt;!&ndash;            <constructor-arg index="0" value="CEAT"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <constructor-arg index="1" value="17"/>&ndash;&gt;-->
+<!--        </bean>-->
+
+
+    <!-- -->
+    <context:component-scan base-package="org.genspark"/>
+
+    <bean id="Tyre" class="org.genspark.Tyre">
+        <property name="brand" value="MRF"/>
+        <property name="size" value="17"/>
+    </bean>
+
+
+</beans>

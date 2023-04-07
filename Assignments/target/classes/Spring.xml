@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="collegePerson" class="org.assignment1.student">
+        <!--ID-->
+        <constructor-arg index="0" value="21"/>
+        <!--Name-->
+        <constructor-arg index="1" value="Steve Smith"/>
+        <!-- Phone Number(s)-->
+        <constructor-arg index="2">
+            <list>
+                <ref bean="phoneNumbers"></ref>
+                <ref bean="phoneNumbers1"></ref>
+                <ref bean="phoneNumbers2"></ref>
+            </list>
+        </constructor-arg>
+        <!-- Address -->
+        <constructor-arg index="3" ref="Address"/>
+
+    </bean>
+
+    <bean id="Address" class="org.assignment1.Address">
+        <property name="city" value="Atlanta"></property>
+        <property name="state" value="GA"></property>
+        <property name="country" value="US"></property>
+        <property name="zipcode" value="30067"></property>
+    </bean>
+
+    <bean id="phoneNumbers" class="org.assignment1.Phone">
+        <property name="mob" value="0000000000"></property>
+    </bean>
+
+    <bean id="phoneNumbers1" class="org.assignment1.Phone">
+        <property name="mob" value="4041234567"></property>
+    </bean>
+    <bean id="phoneNumbers2" class="org.assignment1.Phone">
+        <property name="mob" value="6789998212"></property>
+    </bean>
+
+<!--    <bean id="Tyre" class="org.genspark.Tyre">-->
+<!--        <property name="brand" value="MRF"/>-->
+<!--    </bean>-->
+
+</beans>

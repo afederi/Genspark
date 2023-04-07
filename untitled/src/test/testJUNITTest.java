@@ -12,12 +12,13 @@ class testJUNITTest {
 
     @Test
     void getName() {
+        assertEquals("Steve", example.getName(),"Get name method crashed.");
 
     }
 
     @Test
     void getAge(){
-
+        assertEquals(25, example.getAge(), "Mid age");
     }
 
     @AfterEach

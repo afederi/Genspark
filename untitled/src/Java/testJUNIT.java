@@ -1,6 +1,6 @@
 public class testJUNIT {
-    public String name;
-    public int age;
+    public String name = "Steve";
+    public int age = 25;
     public String getName(){
         return name;
     }
