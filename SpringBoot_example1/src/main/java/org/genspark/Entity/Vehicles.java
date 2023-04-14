@@ -1,8 +1,8 @@
-package Entity;
+package org.genspark.Entity;
 
 public class Vehicles {
     private int v_id;//This is removed because it is the generated ID for the database
-    private long Vin;
+    private String Vin;
     private String type;
     private String Color;
     private Double price;
@@ -11,22 +11,26 @@ public class Vehicles {
     public Vehicles() {
     }
 
-    public Vehicles(long vin, String type, String color, Double price, String licensePlate) {
+
+
+    public Vehicles(int v_id, String vin, String type, String color, Double price, String licensePlate) {
+        this.v_id = v_id;
         Vin = vin;
         this.type = type;
         Color = color;
         this.price = price;
         this.licensePlate = licensePlate;
     }
+
     public int getV_id(){
         return v_id;
     }
 
-    public long getVin() {
+    public String getVin() {
         return Vin;
     }
 
-    public void setVin(long vin) {
+    public void setVin(String vin) {
         Vin = vin;
     }
 
