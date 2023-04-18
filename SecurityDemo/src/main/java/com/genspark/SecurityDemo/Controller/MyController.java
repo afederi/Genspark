@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/home")
 public class MyController {
 
+    @GetMapping("")
+    public String home(){
+        return"<HTML><H1>Hello World</H1></HTML>";
+    }
     @GetMapping("/public")
     public String publicUser(){
         return"<HTML><H1>I am a public user</H1></HTML>";
