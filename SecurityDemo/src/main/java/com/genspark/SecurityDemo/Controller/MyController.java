@@ -22,4 +22,6 @@ public class MyController {
     public String normalUser(){
         return"<HTML><H1>I am a normal user</H1></HTML>";
     }
+
+
 }
