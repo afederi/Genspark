@@ -13,29 +13,31 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class UserService {
 
+
+
     @Autowired
     private UserRepository userRepository;
 
     @Autowired
     private RestTemplate restTemplate;
 
-
     public User saveUser(User user) {
         log.info("Inside saveUser of UserService");
-
         return userRepository.save(user);
     }
+
 
     public ResponseTemplateVO getUserWithDepartment(Long userId) {
 
         log.info("Inside getUserWithDepartment of UserService");
-        ResponseTemplateVO vo = new ResponseTemplateVO();
+        ResponseTemplateVO vo= new ResponseTemplateVO();
         User user = userRepository.findByUserId(userId);
 
-        Department department = restTemplate.getForObject("http://localhost:9001/department/"+user.getDepartmentId(), Department.class);
+        Department department = restTemplate.getForObject("http://localhost:9001/department/"+user.getDepartmentId(),Department.class);
+
         vo.setUser(user);
         vo.setDepartment(department);
-
         return vo;
+
     }
 }

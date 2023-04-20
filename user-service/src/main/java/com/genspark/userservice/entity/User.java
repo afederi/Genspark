@@ -1,9 +1,6 @@
 package com.genspark.userservice.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "users")//Had to create table name or the program will have an error creating a table
 public class User {
 
     @Id
@@ -21,7 +19,4 @@ public class User {
     private String lastName;
     private String email;
     private Long departmentId;
-
-
-
 }
