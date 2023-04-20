@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3c2a84-4712-47f7-9efe-f4fe41a05047" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/Chess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/ChessAbstract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/King.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/pawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service-registry/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/src/main/java/com/genspark/serviceregistry/ServiceRegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-registry/src/main/java/com/genspark/serviceregistry/ServiceRegistryApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/VO/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/VO/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/VO/ResponseTemplateVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/VO/ResponseTemplateVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/genspark/userservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

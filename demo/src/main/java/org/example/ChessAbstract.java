@@ -1,7 +1,7 @@
 package org.example;
 
 public abstract class ChessAbstract {
-    String location = null;
+    String location = "7A";
 
     public abstract void move();
 

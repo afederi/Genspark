@@ -3,6 +3,7 @@ package org.example;
 public class King implements Chess{
 
     String location;
+
     @Override
     public void move() {
 
@@ -17,12 +18,10 @@ public class King implements Chess{
     public void setLocation(String location) {
         this.location = location;
     }
-
     @Override
     public void isLost() {
 
     }
-
     public void isLoss(){
 
     }

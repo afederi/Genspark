@@ -1,8 +1,7 @@
 package org.example;
 
 public interface Chess {
-
-    //String location = null;
+    String location="7";
 
     public void move();
 

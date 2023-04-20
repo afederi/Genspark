@@ -1,6 +1,9 @@
 package org.example;
 
 public class pawn extends ChessAbstract {
+
+
+    String location;
     @Override
     public void move() {
 
@@ -8,7 +11,7 @@ public class pawn extends ChessAbstract {
 
     @Override
     public String getLocation() {
-        return null;
+        return location;
     }
 
     @Override
@@ -18,6 +21,9 @@ public class pawn extends ChessAbstract {
 
     @Override
     public void isLost() {
+
+    }
+    public void isLoss(){
 
     }
 }
