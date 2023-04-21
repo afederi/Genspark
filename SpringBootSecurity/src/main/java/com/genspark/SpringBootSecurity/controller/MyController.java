@@ -1,6 +1,7 @@
 package com.genspark.SpringBootSecurity.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,4 +14,14 @@ public class MyController {
 
     @GetMapping("/public")
     public String publicUser(){return"<HTML><H1>I am a public user</H1></HTML>";}
+
+
+    @GetMapping("/admin")
+    public String adminUser(){return "<HTML><H1< I am a admin user</H1></HTML>";}
+
+    /**A post mapping to add new users with passwords in admin**/
+    @PostMapping("/admin")
+    public String addUser(){return"";
+    }
+
 }
