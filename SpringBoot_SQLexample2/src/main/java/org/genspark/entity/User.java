@@ -14,7 +14,7 @@ public class User {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) //This needs the {TableName}_seq for it to work. So for if you truncate, you need to drop it because it won't populate
+    @GeneratedValue(strategy = GenerationType.AUTO) //This needs the {TableName}_seq for it to work. So far if you truncate, you need to drop it because it won't populate
     private long user_id;
 
     private String username;
