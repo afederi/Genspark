@@ -6,7 +6,8 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 
-public interface CourseService {
+public interface
+CourseService {
     public List<Course> getAllCourse();
 
     public Course getCourseById(int courseID);

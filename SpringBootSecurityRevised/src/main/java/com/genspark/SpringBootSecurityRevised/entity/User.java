@@ -1,37 +1,36 @@
-package com.genspark.SpringBootSecurity.entity;
+package com.genspark.SpringBootSecurityRevised.entity;
 
 import jakarta.persistence.*;
-import lombok.NoArgsConstructor;
 
-
-/**
- * The entity class is what is used to set up the table and its columns
- */
 @Entity
-@Table(name="tbl_users")
-@NoArgsConstructor
+@Table(name = "table_users")
 public class User {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userID;
+    private Long id;
     private String username;
     private String password;
+    private String role;
 
-    private String role="NORMAL";
 
+    public User(){
 
-    public User(String username, String password) {
+    }
+
+    public User(String username, String password, String role) {
         this.username = username;
         this.password = password;
+        this.role = role;
     }
 
-    public Long getUserID() {
-        return userID;
+    public Long getId() {
+        return id;
     }
 
-    public void setUserID(Long userID) {
-        this.userID = userID;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -56,5 +55,15 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                '}';
     }
 }
