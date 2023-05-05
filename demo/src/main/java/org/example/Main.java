@@ -2,13 +2,12 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        Chess c = new King();
+         byte a = 2;
+         byte b = 5;
 
-        //c.setLocation("A5");
-        System.out.println(c.getLocation());
+        byte c = a+b;
 
-        ChessAbstract p = new pawn();
-        System.out.println(p.location);
+
+        System.out.println(a+b);
     }
 }
