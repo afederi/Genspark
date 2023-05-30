@@ -6,7 +6,6 @@
       "description": "Project Description",
       "skills": "json, angular, typeScript"
     },
-
     {
       "id": 1,
       "name": "Project Structure",
@@ -18,6 +17,12 @@
       "name": "Building a portfolio",
       "description": "Project Description for the third time",
       "skills": "3, json, angular, typeScript"
+    },
+    {
+      "name": "This is a project",
+      "description": "Working on a project that is complex",
+      "skills": "JAVA",
+      "id": 3
     }
   ]
 }
