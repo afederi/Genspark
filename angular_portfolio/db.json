@@ -1,27 +1,15 @@
 {
   "projects": [
     {
-      "id": 0,
-      "name": "Insert Name Project Here",
-      "description": "Project Description",
-      "skills": "json, angular, typeScript"
+      "name": "Second project",
+      "description": "testing how the site works",
+      "skills": "angular",
+      "id": 2
     },
     {
-      "id": 1,
-      "name": "Project Structure",
-      "description": "Project Description for the second time",
-      "skills": "2,json, angular, typeScript"
-    },
-    {
-      "id": 2,
-      "name": "Building a portfolio",
-      "description": "Project Description for the third time",
-      "skills": "3, json, angular, typeScript"
-    },
-    {
-      "name": "This is a project",
-      "description": "Working on a project that is complex",
-      "skills": "JAVA",
+      "name": "Projet 3",
+      "description": "This is a demonstration of adding a new project to a list",
+      "skills": "angular",
       "id": 3
     }
   ]
