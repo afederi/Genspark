@@ -4,6 +4,7 @@
 .add-form{
   margin-bottom: 40px;
 }
+label { display: inline-block; width: 150px; text-align: left; }
 .btn{
   margin: 10px;
 }

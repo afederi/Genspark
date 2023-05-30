@@ -5,6 +5,7 @@
 h3{
   font-size: 18px;
   margin-bottom: 0px;
+  margin-left: 5px;
 }
 fa-icon{
   float: right;
@@ -12,6 +13,7 @@ fa-icon{
   margin-top: 5px;
 }
 p{
-  margin-top: 0px;
+  margin-top: 2px;
   font-size: 11px;
+  margin-left: 10px;
 }
