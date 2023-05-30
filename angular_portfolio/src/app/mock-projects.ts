@@ -1,4 +1,4 @@
-import {Projects} from './Projects'
+import {Projects} from './Projects'//This is an interface import
 export const PROJECTS: Projects []= [
   {
     id: 1,

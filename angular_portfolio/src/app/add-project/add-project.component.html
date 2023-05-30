@@ -1,0 +1,16 @@
+<form *ngIf="showAddProject" class = "add-form" (ngSubmit) ="onSubmit()">
+  <div class="form-control">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"[(ngModel)]="name" placeholder="Add Task"/>
+  </div>
+  <div class="form-control">
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" [(ngModel)]="description" placeholder="Add Task"/>
+  </div>
+  <div class="form-control">
+    <label for="skills">Skill</label>
+    <input type="text" name="skills" id="skills" [(ngModel)]="skills" placeholder="Add Task"/>
+  </div>
+  <input type="submit" value="Save Project" class="btn btn-block" />
+
+</form>

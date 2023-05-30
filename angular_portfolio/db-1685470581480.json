@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Project Structure",
+      "description": "Project Description for the second time",
+      "skills": "2,json, angular, typeScript"
+    }
+  ]
+}

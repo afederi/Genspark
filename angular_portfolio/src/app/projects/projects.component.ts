@@ -15,6 +15,19 @@ export class ProjectsComponent implements OnInit {
 
 
   ngOnInit(): void{
+    /**This is done for the file fest
     this.projects = this.projectService.getProject();
+    **/
+
+    this.projectService.getProject().subscribe((Projects)=> this.projects = Projects);
   }
+
+  deleteProject(project: Projects){
+    this.projectService.deleteTask(project).subscribe(()=> (this.projects = this.projects.filter((p) => p.id !== project.id)));
+  }
+
+  addProject(project: Projects){
+    this.projectService.addProject(project).subscribe((project) => this.projects.push(project));
+  }
+
 }

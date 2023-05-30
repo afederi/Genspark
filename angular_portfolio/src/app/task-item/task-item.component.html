@@ -1,6 +1,10 @@
 <div class="project">
   <h3>{{project.name}}
-    <fa-icon (click)="onDelete(project)" [ngStyle]="{'color': 'brown'}" [icon]="faTimes"></fa-icon>
+    <fa-icon
+      (click)="onDelete(project)"
+      [ngStyle]="{'color': 'brown'}"
+      [icon]="faTimes">
+    </fa-icon>
   </h3>
 
   <p>{{project.description}}

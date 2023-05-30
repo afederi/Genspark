@@ -1,1 +1,2 @@
-<app-task-item *ngFor="let project of projects" [project]="project"></app-task-item>
+<app-add-project (onAddProject) = "addProject($event)" ></app-add-project>
+<app-task-item *ngFor="let project of projects" [project]="project" (onDeleteProject)="deleteProject(project)" ></app-task-item>
