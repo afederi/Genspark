@@ -14,7 +14,7 @@ public class MyController {
     private CourseService courseService;
 
     @GetMapping("/")
-    public String home(){return "<HTML><H1>Welcome to Course Application</H1></HTML>";}
+    public String home(){return "se Application</></HTML>";}
 
     @GetMapping("/courses")
     public List<Course> getCourses(){return this.courseService.getAllCourse();}
