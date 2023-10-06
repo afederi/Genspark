@@ -1,11 +1,8 @@
 package org.example.Entity;
 
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
 @Getter
@@ -16,7 +13,7 @@ public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long department_id;
-    String name;
+    private long departmentId;
+    private String name;
 
 }
