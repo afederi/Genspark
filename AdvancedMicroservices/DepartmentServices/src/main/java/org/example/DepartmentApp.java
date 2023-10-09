@@ -11,10 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
 @SpringBootApplication
-public class App 
+public class DepartmentApp
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(App.class,args);
+        SpringApplication.run(DepartmentApp.class,args);
     }
 }
