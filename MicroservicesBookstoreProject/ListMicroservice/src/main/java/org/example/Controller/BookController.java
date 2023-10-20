@@ -38,7 +38,7 @@ public class BookController {
     }
 
     //http://localhost:8082/book/home
-    @GetMapping("/home")
+    @GetMapping(value = "/home")
     public String home(){
         return "Welcome to the book page";
     }
